@@ -4,6 +4,10 @@ class User {
     this.i = i;
     print('default cons $i');
   }
+  User.named(int i, String name) {
+    this.i = i;
+    print('default cons $i');
+  }
   void call() {
     print('call function $i');
   }
@@ -12,5 +16,6 @@ class User {
 void main() {
   User u = new User(12);
   User u1 = new User(12);
+  User u2 = User.named(12, 'dart');
   u.call();
 }
