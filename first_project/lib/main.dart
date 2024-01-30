@@ -1,6 +1,8 @@
 import 'package:first_project/Scrollview.dart';
 import 'package:first_project/first.dart';
 import 'package:first_project/FetchImages.dart';
+import 'package:first_project/inkWell.dart';
+import 'package:first_project/listTile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyImages(),
+      home: const MyInkWell(),
     );
   }
 }
