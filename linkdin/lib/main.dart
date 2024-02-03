@@ -1,11 +1,5 @@
-import 'package:first_project/Scrollview.dart';
-import 'package:first_project/first.dart';
-import 'package:first_project/FetchImages.dart';
-import 'package:first_project/form.dart';
-import 'package:first_project/inkWell.dart';
-import 'package:first_project/listTile.dart';
-import 'package:first_project/stack.dart';
 import 'package:flutter/material.dart';
+import 'package:linkdin/listtile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyForm(),
+      home: const Mypage(),
     );
   }
 }
@@ -113,13 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'Hello User',
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 25,
-              ),
-            ),
             const Text(
               'You have pushed the button this many times:',
             ),
