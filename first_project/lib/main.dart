@@ -3,9 +3,11 @@ import 'package:first_project/bottomnavigation.dart';
 import 'package:first_project/first.dart';
 import 'package:first_project/FetchImages.dart';
 import 'package:first_project/form.dart';
+import 'package:first_project/hometab.dart';
 import 'package:first_project/inkWell.dart';
 import 'package:first_project/listTile.dart';
 import 'package:first_project/navigation.dart';
+import 'package:first_project/splashscreen.dart';
 import 'package:first_project/stack.dart';
 import 'package:flutter/material.dart';
 
@@ -23,21 +25,71 @@ class MyNavigationDrawer extends StatefulWidget {
 class _MyNavigationDrawerState extends State<MyNavigationDrawer> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        drawer: MyDrawer(),
-        appBar: AppBar(
-          title: Text('Navigation Drawer'),
-        ),
-        body: Center(
-          child: Text('Navigation Drawer'),
-        ),
-      ),
-    );
+    return MaterialApp(home: MySplashScreen());
   }
 }
 
 
+// class _MyNavigationDrawerState extends State<MyNavigationDrawer> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: DefaultTabController(
+//         length: 4,
+//         child: Scaffold(
+//           appBar: AppBar(
+//             title: Text('Tab Bar View'),
+//             bottom: TabBar(
+//               tabs: [
+//                 Tab(
+//                   icon: Icon(Icons.home),
+//                   text: 'Home',
+//                 ),
+//                 Tab(
+//                   icon: Icon(Icons.chat),
+//                   text: 'Chat',
+//                 ),
+//                 Tab(
+//                   icon: Icon(Icons.call),
+//                   text: 'Calls',
+//                 ),
+//                 Tab(
+//                   icon: Icon(Icons.settings),
+//                   text: 'Settings',
+//                 ),
+//               ],
+//             ),
+//           ),
+//           body: TabBarView(
+//             children: [
+//               MyHomeTab(),
+//               Icon(Icons.chat),
+//               Icon(Icons.call),
+//               Icon(Icons.settings),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// class _MyNavigationDrawerState extends State<MyNavigationDrawer> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         drawer: MyDrawer(),
+//         appBar: AppBar(
+//           title: Text('Navigation Drawer'),
+//         ),
+//         body: Center(
+//           child: Text('Navigation Drawer'),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 // class MyApp extends StatelessWidget {
 //   const MyApp({super.key});
